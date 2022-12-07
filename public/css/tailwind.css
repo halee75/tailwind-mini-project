@@ -1567,10 +1567,6 @@ video {
   opacity: 0.75;
 }
 
-.hover\:opacity-50:hover {
-  opacity: 0.5;
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
