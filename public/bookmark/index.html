@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./../js/book.js"></script>
-    <title>Document</title>
+    <title>Bookmark</title>
 </head>
 <body>
-    <header class="fixed z-10 w-full">
-        <nav class="nav-header pt-3 bg-white border-gray-200">
+    <header>
+        <nav class="nav-header pt-10 pl-2 bg-white border-gray-200">
             <div class="max-w-screen-xl mx-auto">
-                <div class="relative md:flex gap-10 justify-between md:justify-start">
+                <div class="relative md:flex items-center md:justify-start">
                     <a href="#">
                         <img src="./../img/bookmark/logo-bookmark.svg" alt="" class="logo-nav">
                         <img src="./../img/bookmark/logo-bookmark-footer.svg" alt="" class="logo-footer hidden">
                     </a>
-                    <div class="menu-mob absolute top-[-10px] right-0
-                    text-gray-500 rounded-lg md:hidden">
+                    <div class="menu-mob absolute top-[-10px] right-0 text-gray-500 rounded-lg md:hidden">
                         <nav x-data="{ open: false }">
                             <button class="text-black w-10 h-10 relative " @click="open = !open">
                                 <span class="sr-only">Open main menu</span>
@@ -32,23 +31,22 @@
                             </button>
                         </nav>
                     </div>
-                    <div class="menu-header hidden gap-4 w-full 
-                             md:items-center md:justify-between md:flex md:order-1 md:w-[calc(100%_-_150px)] md:bg-white md:gap-7"
+                    <div class="menu-header hidden gap-4 
+                             md:items-center md:justify-end md:flex md:order-1 md:w-[calc(100%_-_150px)] md:bg-white md:gap-9"
                         id="mobile-menu-2">          
-                        <ul class="flex flex-col gap-4 mt-4 md:font-medium
-                        md:flex-row md:space-x-8 md:mt-0">
-                            <li class="pb-4 mx-4 border-b border-white md:pb-0 md:border-none">
-                                <a href="#" class="text-white uppercase  hover:text-orange-600 md:text-gray-400">Features</a>
+                        <ul class="flex flex-col mt-4 md:font-medium md:flex-row md:space-x-8 md:mt-0">
+                            <li class="py-3 mx-2 border-b border-white md:py-0 md:border-none">
+                                <a href="#" class="text-white uppercase  hover:text-red-500 md:text-gray-400">Features</a>
                             </li>
-                            <li class="pb-4 mx-4 border-b border-white md:pb-0 md:border-none">
-                                <a href="#" class="text-white uppercase hover:text-orange-600 md:text-gray-400">Downloads</a>
+                            <li class="py-3 mx-2 border-b border-white md:py-0 md:border-none">
+                                <a href="#" class="text-white uppercase hover:text-red-500 md:text-gray-400">Downloads</a>
                             </li>
-                            <li class="pb-4 mx-4 border-b border-white md:pb-0 md:border-none">
-                                <a href="#" class="text-white uppercase hover:text-orange-600 md:text-gray-400">FAQ</a>
+                            <li class="py-3 mx-2 border-b border-white md:py-0 md:border-none">
+                                <a href="#" class="text-white uppercase hover:text-red-500 md:text-gray-400">FAQ</a>
                             </li>
                         </ul>
                         <div class="grid gap-5 md:flex md:items-center">
-                            <a class="login-button py-2 px-8  uppercase text-white hover:text-orange-600 hover:bg-white hover:border-orange-600 hover:border md:bg-orange-600 md:rounded-lg" href="#">Login</a>
+                            <a class="login-button py-2 px-8  uppercase text-white  hover:text-red-500 hover:bg-white hover:border-red-500 md:bg-red-500 md:rounded-lg md:border" href="#">Login</a>
                         </div>
                     </div>
                 </div>
@@ -56,32 +54,24 @@
         </nav>
     </header>
     <section class="mb-20 bg-white dark:bg-gray-900">
-        <div class="grid gap-5 justify-center max-w-screen-xl px-3 pt-20 pb-8 mx-auto lg:gap-8
-                xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28 md:px-4">
-            <div class="order-2 text-center lg:text-left lg:mr-auto lg:order-1 lg:col-span-7">
-                <h1 class="max-w-2xl mb-4 text-3xl font-extrabold
-                        leading-none tracking-tight md:text-5xl xl:text-6xl
-                        ">A Simple Bookmark Manager</h1>
-                <p class="max-w-2xl mb-6 px-10 font-light text-gray-500 lg:mb-8
-                        md:text-lg lg:text-xl md:px-0">Build your
+        <div class="grid gap-5 justify-center  max-w-screen-xl px-5 pt-20 pb-8 mx-auto lg:gap-8
+                xl:gap-0 lg:py-16 lg:pt-28 md:px-4 md:grid-cols-2">
+            <div class="order-2 text-center md:text-left md:order-1">
+                <h1 class="max-w-2xl mb-4 text-3xl font-extrabold md:text-5xl xl:text-6xl">A Simple Bookmark Manager</h1>
+                <p class="max-w-2xl my-6 px-3 text-gray-400 lg:my-8 md:text-lg lg:text-xl md:px-0">Build your
                     brand's recognition and get detailed insights on
                     how your links are performing. Build your
                     brand's recognition and get detailed insights on
                     how your links are performing</p>
                 <div>
-                    <a href="#" class="
-                            p-4 mr-3 rounded-lg bg-blue-600 text-white 
-                            text-sm font-medium text-center
-                         hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600
-                            sm:w-auto 
-                            ">
+                    <a href="#" class=" px-2 py-3 mr-3 text-white text-sm font-medium text-center bg-blue3 border rounded-lg hover:bg-white hover:border-blue3 hover:text-blue3 sm:w-auto sm:p-4">
                         Get it on Chrome
                     </a>
-                    <a href="#" class="p-4 rounded-lg bg-gray-300 text-black text-sm font-medium text-center hover:bg-white hover:border hover:border-gray-300 sm:w-auto">Get it on Firefox</a>
+                    <a href="#" class="px-2 py-3 text-black text-sm font-medium text-center border bg-gray-300  rounded-lg  hover:bg-white hover:border-gray-300 sm:w-auto sm:p-4">Get it on Firefox</a>
                 </div>
             </div>
-            <div class="relative lg:mt-0 lg:col-span-5 lg:flex lg:order-2">
-                <div class="relative after:absolute  after:z-0 after:h-[200px]  after:bottom-0 after:left-40 after:rounded-l-full after:bg-blue-400 lg:after:w-[35vw] ">
+            <div class="relative lg:mt-0 lg:flex md:order-2">
+                <div class="relative after:absolute  after:z-0 after:h-[230px]  after:bottom-0 after:left-40 after:rounded-l-full after:bg-blue3 lg:after:w-[40vw] ">
                     <img src="./../img/bookmark/illustration-hero.svg" alt="hero image" class="relative md:z-10">
                 </div>
             </div>
@@ -90,16 +80,16 @@
     <section>
         <div class="pb-8 mb-8 px-8 text-center">
             <p class="mb-3 text-4xl font-bold">Features</p>
-            <p class="text-gray-500">Track how your links are performing
-                accross the web with our advanced <br>statistics dashboard. the web with our advanced statistics dashboard</p>
+            <p class="max-w-lg mx-auto text-gray-500">Track how your links are performing
+                accross the web with our advanced statistics dashboard. the web with our advanced statistics dashboard</p>
         </div>
-        <div class="grid text-center mb-20 gap-10 border-b text-gray-700 md:flex md:max-w-md md:mx-auto">
-            <div class="pb-4 border-b text-gray-700 md:border-none"><span class="title-1 pb-4">Simple Bookmark</span></div>
-            <div class="pb-4 border-b text-gray-700 md:border-none"><span class="title-2 pb-4">Speed Searching</span></div>
-            <div class="title-3 w-fit m-auto pb-4 border-orange">Easy Sharing</div>
+        <div class="grid text-center mb-10 gap-14 border-b text-gray-700 md:flex md:max-w-lg md:mx-auto">
+            <div class="pb-4 border-b text-gray-700 md:border-none"><span class="title-1 pb-4 hover:text-red-500">Simple Bookmark</span></div>
+            <div class="pb-4 border-b text-gray-700 md:border-none hover:text-red-500"><span class="title-2 pb-4">Speed Searching</span></div>
+            <div class="title-3 w-fit m-auto pb-4 border-orange hover:text-red-500">Easy Sharing</div>
         </div>
-        <div class="grid justify-center gap-32 w-full mb-20 md:flex">
-            <div class="relative after:absolute  after:z-0 after:h-[250px] after:-bottom-14 after:right-44 after:rounded-r-full after:bg-blue-400 lg:after:w-[35vw]">
+        <div class="grid justify-center gap-32 w-full px-5 mb-20 md:flex md:px-0">
+            <div class="relative after:absolute  after:z-0 after:h-[250px] after:-bottom-14 after:right-44 after:rounded-r-full after:bg-blue3 lg:after:w-[35vw]">
             <img src="./../img/bookmark/illustration-features-tab-1.svg" alt="" class="tab-1 hidden relative z-10">
             <img src="./../img/bookmark/illustration-features-tab-2.svg" alt="" class="tab-2 hidden relative z-10">
             <img src="./../img/bookmark/illustration-features-tab-3.svg" alt="" class="tab-3 relative z-10">
@@ -109,113 +99,114 @@
                 <p class="text-1 hidden text-3xl font-bold">Intelligent search</p>
                 <p class="text-2 hidden text-3xl font-bold">Bookmark search</p>
                 <p class="text-3 text-3xl font-bold">Sharing search</p>
-                <p class="my-8 text-gray-400">Build your
-                    brand's recognition and get detailed insights <br>on
+                <p class="max-w-lg my-8 pb-5 text-gray-400">Build your
+                    brand's recognition and get detailed insights on
                     how your links are performing. Build your
-                    brand's recognition and get detailed</p>
-                <span class="p-3 rounded-lg bg-blue-500 text-white hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">More Info</span>
+                    brand's recognition and get detailed and get detailed.</p>
+                <span class="py-3 px-5 text-white font-bold rounded-lg bg-blue3  hover:bg-white hover:border hover:border-blue3 hover:text-blue3">More Info</span>
             </div>
         </div>
-        <div class="pb-8 my-10 px-8 text-center">
-            <p class="mb-3 text-4xl font-bold">Download the extensions</p>
-            <p class="text-gray-500">Track how your links are performing
-                accross the web with our advanced <br>statistics dashboard. the web with our advanced statistics dashboard</p>
+        <div class="py-14 my-10 px-8 text-center">
+            <p class="mb-3 text-3xl font-bold md:text-4xl">Download the extensions</p>
+            <p class="max-w-lg mx-auto pt-3 text-gray-500 ">Track how your links are performing
+                accross the web with our advanced statistics dashboard. the web with our advanced statistics dashboard</p>
         </div>
-        <div class=" grid gap-10 justify-center pt-20 md:flex">
+        <div class=" grid gap-10 justify-center pt-20 px-4 md:flex">
             <div class="rounded-lg shadow-lg p-4 text-center ">
                 <img src="./../img/bookmark/logo-chrome.svg" alt="" class="m-auto">
-                <p class="p-4 text-xl font-bold">Add to Chrome</p>
+                <p class="p-4 mt-4 text-xl font-bold">Add to Chrome</p>
                 <p class="text-gray-500 pb-3">Minimum version 62</p>
                 <img src="./../img/bookmark/bg-dots.svg" alt="">
-                <p class="py-3 px-8 m-4 bg-blue-500 rounded-lg text-center text-white hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">Add & Install Extension</p>
+                <p class="py-3 px-8 m-4 bg-blue3 rounded-lg text-center text-white border hover:bg-white  hover:border-blue3 hover:text-blue3">Add & Install Extension</p>
             </div>
             <div class="rounded-lg shadow-lg p-4 text-center mt-5 -mb-5 ">
                 <img src="./../img/bookmark/logo-firefox.svg" alt="" class="m-auto">
-                <p class="p-4 text-xl font-bold">Add to Firefox</p>
+                <p class="p-4 mt-4 text-xl font-bold">Add to Firefox</p>
                 <p class="text-gray-500 pb-3">Minimum version 62</p>
                 <img src="./../img/bookmark/bg-dots.svg" alt="">
-                <p class="py-3 px-8 m-4 bg-blue-500 rounded-lg text-center text-white hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">Add & Install Extension</p>
+                <p class="py-3 px-8 m-4 bg-blue3 rounded-lg text-center text-white border hover:bg-white hover:border-blue3 hover:text-blue3">Add & Install Extension</p>
     
             </div>
             <div class="rounded-lg shadow-lg p-4 text-center mt-10 -mb-10">
                 <img src="./../img/bookmark/logo-opera.svg" alt="" class="m-auto">
-                <p class="p-4 text-xl font-bold">Add to Opera</p>
+                <p class="p-4 mt-4 text-xl font-bold">Add to Opera</p>
                 <p class="text-gray-500 pb-3">Minimum version 62</p>
                 <img src="./../img/bookmark/bg-dots.svg" alt="">
-                <p class="py-3 px-8 m-4 bg-blue-500 rounded-lg text-center text-white hover:bg-white hover:border hover:border-blue-600 hover:text-blue-600">Add & Install Extension</p>
+                <p class="py-3 px-8 m-4 bg-blue3 rounded-lg text-center text-white border hover:bg-white hover:border-blue3 hover:text-blue3">Add & Install Extension</p>
             </div>
         </div>
-        <div class="py-10 my-10 px-8 text-center">
-            <p class="mb-3 text-4xl font-bold">Frequently Asked Questions</p>
-            <p>Track how your links are performing
-                accross the web with our advanced <br> the web with our advanced.</p>
+        <div class="pt-20 mt-20 mb-10 px-8 text-center">
+            <p class="mb-5 text-3xl font-bold md:text-4xl">Frequently Asked Questions</p>
+            <p class="max-w-lg mx-auto ">Track how your links are performing
+                accross the web with our advanced the web with our advanced.</p>
         </div>
-        <div class="accordion-wrapper max-w-lg m-auto px-5 text-gray-500 ">
-            <div class="accordion-item py-4">
-                <div class="accordion flex justify-between items-center">
-                    <p class="hover:text-orange-600">What is Bookmark?</p>
-                    <i class="fa-solid fa-angle-down"></i>
+        <div class="accordion-wrapper max-w-3xl m-auto px-5 text-gray-500 ">
+            <div class="accordion-item py-4 border-b border-gray-300">
+                <div class="accordion flex justify-between items-center ">
+                    <p class="hover:text-red-500">What is Bookmark?</p>
+                    <i class="fa-solid fa-angle-down duration-500 ease-in"></i>
                 </div>
-                <div class="content pt-3">
+                <div class="content pt-3 text-gray-400">
                     Living in the city helps people have more opportunities to take good education as well as do research science.I was born and raised in the heart of Hanoi city. I love Hanoi and my life right now. My family lives in an apartment in Dong Da district
                 </div>
             </div>
-            <div class="accordion-item py-4">
+            <div class="accordion-item py-4 border-b border-gray-300">
                 <div class="accordion flex justify-between items-center">
-                    <p class="hover:text-orange-600">How can I request is your browser</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="hover:text-red-500">How can I request is your browser</p>
+                    <i class="fa-solid fa-angle-down duration-500 ease-in"></i>
                 </div>
-                <div class="content pt-3">
+                <div class="content pt-3 text-gray-400">
                     Living in the city helps people have more opportunities to take good education as well as do research science.I was born and raised in the heart of Hanoi city. I love Hanoi and my life right now. My family lives in an apartment in Dong Da district
                 </div>
             </div>
-            <div class="accordion-item py-4">
+            <div class="accordion-item py-4 border-b border-gray-300">
                 <div class="accordion flex justify-between items-center">
-                    <p class="hover:text-orange-600">Is there your browser?</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="hover:text-red-500">Is there your browser?</p>
+                    <i class="fa-solid fa-angle-down duration-500 ease-in"></i>
                 </div>
-                <div class="content pt-3">
+                <div class="content pt-3 text-gray-400">
                     Living in the city helps people have more opportunities to take good education as well as do research science.I was born and raised in the heart of Hanoi city. I love Hanoi and my life right now. My family lives in an apartment in Dong Da district
                 </div>
             </div>
-            <div class="accordion-item py-4">
+            <div class="accordion-item py-4 border-b border-gray-300">
                 <div class="accordion flex justify-between items-center">
-                    <p class="hover:text-orange-600">What about our Chrome Blockchain?</p>
-                    <i class="fa-solid fa-angle-down"></i>
+                    <p class="hover:text-red-500">What about our Chrome Blockchain?</p>
+                    <i class="fa-solid fa-angle-down duration-500 ease-in"></i>
                 </div>
-                <div class="content pt-3">
+                <div class="content pt-3 text-gray-400">
                     Living in the city helps people have more opportunities to take good education as well as do research science.I was born and raised in the heart of Hanoi city. I love Hanoi and my life right now. My family lives in an apartment in Dong Da district
                 </div>
             </div>
         </div>
-        <div class="bg-blue-700 mt-20 ">
-            <div class="max-w-2xl m-auto p-20 text-white text-center">
-            <p class="uppercase text-xl">35000+ already joined</p>
-            <p class="py-8 text-4xl font-bold">Stay up-to-date with what we're doing</p>
+        <div class="bg-blue3 mt-20 ">
+            <div class=" m-auto px-2 py-20 text-white text-center md:max-w-2xl md:p-20">
+            <p class="uppercase md:text-xl">35000+ already joined</p>
+            <p class="py-8 text-2xl font-bold md:text-4xl">Stay up-to-date with what we're doing</p>
             <div>
                 <form>
-                    <input type="email" class="input-link py-3 px-8 border__base focus:outline-none focus:ring-1 focus:ring-palette-primary lg:w-2/3" required="" placeholder="Enter your email address">
-                    <button type="submit" class="mt-3 py-3 px-5 bg-orange-700 rounded-lg hover:text-orange-600 hover:bg-white hover:border-orange-600 hover:border">Contact us</button>
+                    <input type="email" class="input-link max-w-[250px] w-full py-2 px-5 rounded-lg" required="" placeholder="Enter your email address">
+                    <button type="submit" class="mt-3 py-2 px-5 font-bold bg-red-500 rounded-lg border border-red-500 hover:text-red-500 hover:bg-white hover:border-red-500 ">Contact us</button>
             </div>
+            
         </div>
         </div>
     </section>
     
-    <footer class="grid justify-center bg-zinc-500 p-20 lg:grid-cols-2">
+    <footer class="grid justify-center bg-blue4 p-20 lg:grid-cols-2">
         <div class="grid lg:flex gap-10 justify-center">
            <div> <img src="./../img/bookmark/logo-bookmark-footer.svg" alt=""></div>
             <ul class="grid text-center gap-5 uppercase text-gray-400 lg:flex lg:gap-10">
-                <li class="hover:text-orange-600">Features</li>
-                <li class="hover:text-orange-600">Downloads</li>
-                <li class="hover:text-orange-600">FAQ</li>
+                <li class="hover:text-red-500">Features</li>
+                <li class="hover:text-red-500">Downloads</li>
+                <li class="hover:text-red-500">FAQ</li>
             </ul>
         </div>
-        <div class="flex gap-10 justify-center mt-10 md:mt-0 ">
+        <div class="flex gap-10 justify-center items-center mt-12 md:mt-0 ">
             <div>
-                <img src="./../img/bookmark/icon-facebook.svg" alt="">
+                <i class="text-2xl text-white fa-brands fa-square-facebook hover:text-red-500"></i>
             </div>
             <div>
-                <img src="./../img/bookmark/icon-twitter.svg" alt="">
+                <i class="text-2xl text-white fa-brands fa-twitter hover:text-red-500"></i>
             </div>
         </div>
     </footer>

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,216 +8,214 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="./../js/main.js"></script>
-    <title>Document</title>
+    <title>Shortly Link</title>
 </head>
+
 <body>
-    <header class="fixed z-10 w-full">
+    <header class="w-full">
         <nav class="py-3 px-5 dark:bg-gray-900 bg-white border-gray-200 ">
             <div class="max-w-screen-xl mx-auto">
-                <div class="relative md:flex md:gap-10">
+                <div class="relative text-md md:flex md:gap-16">
                     <a href="#" class="flex__center">
                         <img src="./../img/imgShortly/logo.svg" alt="">
                     </a>
                     <div class="menu-mob absolute top-[-10px] right-0
-                    text-gray-500 rounded-lg md:hidden">
+                    text-gray-500 rounded-lg md:hidden ">
                         <nav x-data="{ open: false }">
                             <button class="text-black w-10 h-10 relative " @click="open = !open">
                                 <span class="sr-only">Open main menu</span>
-                                <div class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
-                                    <span aria-hidden="true" class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
-                                    <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                                    <span aria-hidden="true" class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
+                                <div
+                                    class="block w-5 absolute left-1/2 top-1/2   transform  -translate-x-1/2 -translate-y-1/2">
+                                    <span aria-hidden="true"
+                                        class="block absolute h-0.5 w-5 bg-current transform transition duration-500 ease-in-out"
+                                        :class="{'rotate-45': open,' -translate-y-1.5': !open }"></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute  h-0.5 w-5 bg-current   transform transition duration-500 ease-in-out"
+                                        :class="{'opacity-0': open } "></span>
+                                    <span aria-hidden="true"
+                                        class="block absolute  h-0.5 w-5 bg-current transform  transition duration-500 ease-in-out"
+                                        :class="{'-rotate-45': open, ' translate-y-1.5': !open}"></span>
                                 </div>
                             </button>
                         </nav>
                     </div>
-                   
-                    <div class="menu-header hidden w-full mt-3 bg-indigo-900
+
+                    <div class="menu-header hidden  w-full mt-3 bg-SlateBlue
                             md:justify-between md:items-center md:flex md:order-1 md:w-[calc(100%_-_150px)] md:mt-0 md:bg-white "
                         id="mobile-menu-2">
-                        <ul class="flex flex-col gap-4 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
+                        <ul class="flex flex-col gap-3 mt-4 font-medium md:flex-row md:space-x-8 md:mt-0">
                             <li>
-                                <a href="#" class="text-white font-bold hover:text-gray-700 md:text-gray-400">Features</a>
+                                <a href="#"
+                                    class="text-white font-bold hover:text-gray-700 md:text-gray-400">Features</a>
                             </li>
                             <li>
-                                <a href="#" class="text-white font-bold hover:text-gray-700 md:text-gray-400">Pricing</a>
+                                <a href="#"
+                                    class="text-white font-bold hover:text-gray-700 md:text-gray-400">Pricing</a>
                             </li>
                             <li>
-                                <a href="#" class="text-white font-bold hover:text-gray-700 md:text-gray-400">Resources</a>
+                                <a href="#"
+                                    class="text-white font-bold hover:text-gray-700 md:text-gray-400">Resources</a>
                             </li>
                         </ul>
-                        <div class="grid gap-5 pt-2 mx-4 border-t-2 border-gray-300 md:border-t-0 md:flex md:items-center">
+                        <div
+                            class="grid gap-5 mx-4 border-t-2 border-gray-300 md:border-t-0 md:flex md:items-center">
                             <a class="login-button font-bold text-white md:text-gray-400
                                     hover:text-gray-700" href="#">Login</a>
 
                             <a href="https://themesberg.com/product/tailwind-css/landing-page" class="text-sm text-white font-bold px-4 py-2 mb-3
-                                bg-teal-300 hover:opacity-75 focus:ring-4
-                                rounded-3xl md:block md:mb-0 lg:px-8 lg:py-2.5 sm:mr-2 lg:mr-0
-                                focus:outline-none">Sign Up</a>
+                                bg-DarkTurquoise rounded-3xl hover:opacity-75 
+                                md:block md:mb-0 lg:px-6 lg:py-2.5 sm:mr-2 lg:mr-0">Sign Up</a>
                         </div>
                     </div>
                 </div>
-
             </div>
         </nav>
     </header>
-    <section class="mb-20 bg-white dark:bg-gray-900">
-        <div class="grid gap-5 max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:gap-8
-                xl:gap-0 lg:py-16 lg:grid-cols-12 lg:pt-28">
-            <div class="text-center place-self-center order-2 lg:mr-auto lg:order-1 lg:col-span-7">
-                <h1 class="max-w-2xl mb-4 text-4xl font-extrabold
-                        leading-none tracking-tight md:text-5xl xl:text-6xl
-                        dark:text-white">More than just <br>shorter link</h1>
-                <p class="max-w-2xl mb-6 font-light text-gray-500 lg:mb-8
-                        md:text-lg lg:text-xl dark:text-gray-400">Build your
-                    brand's recognition and get detailed <br> insights on
-                    how your links are performing</p>
-                <div class="space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-                    <a href="#" class="inline-flex items-center
-                            justify-center mx-auto px-14 py-4 bg-teal-400
-                            hover:opacity-75 text-sm font-medium text-center
-                            text-white border border-gray-200 rounded-full
-                            sm:w-auto ">
-                        Get started
-                    </a>
-                </div>
+    <section class="mb-20 bg-white">
+        <div class="flex flex-col-reverse gap-10 items-center max-w-screen-xl px-4 pt-20 pb-8 mx-auto lg:grid lg:gap-8 lg:py-16 lg:grid-cols-2">
+            <div class="grid gap-5 order-2 text-center lg:text-left md:order-1">
+                <h1 class="max-w-xl mb-2 text-5xl font-extrabold md:text-6xl lg:mb-4 ">More than just shorter links</h1>
+                <p class="max-w-md mx-auto text-gray-400 lg:mb-8 lg:text-xl md:text-lg md:mt-6 md:mx-0">Build your
+                    brand's recognition and getsdf detailed insights on
+                    how your links are performing and getsdf detailed insights getsdf insights.</p>
+                    <div class="mx-auto md:mx-0">
+               <a href="#" class="px-8 py-3 text-xl font-bold text-center text-white bg-DarkTurquoise border border-gray-200 rounded-full  hover:opacity-75 ">
+                Get Started
+            </a>
+        </div>
             </div>
-            <div class="lg:mt-0 lg:col-span-5 lg:flex lg:order-2">
-                <img src="./../img/imgShortly/illustration-working.svg" alt="hero image" class="m-auto">
-            </div>
+            <img src="./../img/imgShortly/illustration-working.svg" alt="hero image" class="order-2 m-auto lg:order-1">
         </div>
     </section>
-    <section class="mb-32">
-        <div class="relative top-[-90px] z-0 max-w-5xl mx-auto px-5 py-10 ">
+    <section class="pb-32 bg-gray-100 px-5">
+        <div class="relative top-[-90px] z-0  mx-auto py-10 md:max-w-4xl ">
             <div>
-                <form class="grid font-secondary
-                        bg-indigo-900 border__base w-full py-7 px-7  mx-auto gap-2 md:grid-cols-[80%_20%] md:px-14">
-                    <input type="text" class="input-link py-3 px-8 border__base 
-                            focus:outline-none focus:ring-1
-                            focus:ring-palette-primary"  placeholder="Shorten a link here">
-                    <button type="button" class="btn-shorten py-3
-                            bg-palette-primary hover:bg-palette-dark text-white
-                            bg-teal-300 text-sm sm:text-base font-semibold
-                            rounded-lg border border-teal-300 hover:opacity-75">Shorten it</button>
+                <form class="grid gap-2 py-8 px-6  mx-auto font-secondary bg-SlateBlue rounded-lg md:grid-cols-[80%_20%] md:px-10">
+                    <input type="text" class="input-link min-w-[50px] p-2 rounded-lg placeholder:text-orange-300"
+                        placeholder="Shorten a link here">
+                    <button type="button" class="btn-shorten py-3 text-white
+                             text-sm sm:text-base font-semibold bg-DarkTurquoise rounded-lg border border-DarkTurquoise hover:opacity-75   hover:bg-palette-dark">Shorten It!</button>
                     <div class="message-error-url hidden text-red-900">Please enter a valid url</div>
                     <div class="message-error hidden text-red-900">Please enter something</div>
             </div>
-            <div class="border__base justify-between bg-white
-                    my-5 py-4 px-7 text-center md:flex md:items-center">
-                <div>
-                    <p class="overflow-x-scroll font-bold">https://www.frontendmentor.io</p>
-                </div>
+            <div class="justify-between bg-white
+                    my-5 py-4 px-7 rounded-lg shadow-sm text-center md:flex md:items-center">
+                <p class="font-bold break-all">https://www.frontendmentor.io</p>
                 <div class="text-center gap-3 md:flex md:items-center">
-                    <p class="py-3 text-teal-300 font-bold ">https://www.frontend</p>
-                    <button class="px-6 py-2 border__base text-white
-                            bg-teal-300 hover:opacity-75">Copy</button>
+                    <p class="py-3 text-DarkTurquoise font-bold ">https://www.frontend</p>
+                    <button class="px-8 py-2 border__base text-white bg-DarkTurquoise hover:opacity-75 hover:cursor-pointer">Copy</button>
                 </div>
             </div>
-            <div class="border__base  justify-between bg-white
-                    my-5 py-4 px-7 text-center md:flex md:items-center">
-                <div>
-                    <p class="overflow-x-scroll font-bold">https://www.frontendmentor.io</p>
-                </div>
+            <div class="justify-between bg-white
+                    my-5 py-4 px-7 rounded-lg text-center md:flex md:items-center">
+                
+                    <p class="font-bold break-all">https://www.frontendmentor.io/fontend</p>
+                
                 <div class="text-center gap-3 md:flex md:items-center">
-                    <p class="py-3 text-teal-300 font-bold ">https://www.frontend</p>
-                    <button class="px-6 py-2 border__base text-white
-                            bg-black hover:opacity-75">Copy</button>
+                    <p class="py-3 text-DarkTurquoise font-bold ">https://www.frontend</p>
+                    <button class="px-8 py-2 border__base text-white
+                            bg-SlateBlue hover:opacity-75">Copy</button>
                 </div>
             </div>
-            <div class="border__base  justify-between bg-white
-                my-5 py-4 px-7 text-center md:flex md:items-center">
-                <div>
-                    <p class="overflow-x-scroll font-bold">https://www.frontendmentor.io</p>
-                </div>
+            <div class="justify-between bg-white
+                my-5 py-4 px-7 rounded-lg text-center md:flex md:items-center">
+               
+                    <p class="font-bold break-all">https://www.frontendmentor/fontend-mentor</p>
+               
                 <div class="text-center gap-3 md:flex md:items-center">
-                    <p class="py-3 text-teal-300 font-bold ">https://www.frontend</p>
-                    <button class="px-6 py-2 border__base text-white
-                        bg-teal-300 hover:opacity-75">Copy</button>
+                    <p class="py-3 text-DarkTurquoise font-bold ">https://www.frontend</p>
+                    <button class="px-8 py-2 border__base text-white
+                            bg-DarkTurquoise hover:opacity-75 hover:cursor-pointer">Copy</button>
                 </div>
             </div>
         </div>
-        <div class="pb-8 mb-8 px-8 text-center">
-            <p class="mb-3 text-4xl font-bold">Advanced Statistics</p>
-            <p class="text-gray-500">Track how your links are performing
+        <div class="max-w-lg mx-auto pb-8 mb-8 px-3 text-center">
+            <p class="mb-5 text-[29px] font-bold sm:text-4xl">Advanced Statistics</p>
+            <p class="text-gray-400 px-3">Track how your links are performing
                 accross the web with our advanced statistics dashboard</p>
         </div>
         <div class="relative">
-            <div
-                class="relative grid gap-10 max-w-5xl my-10 mx-auto text-center before:left-1/2 before:-translate-x-2/4 before:h-full before:w-3 before:bg-teal-300 before:absolute  md:before:w-full md:before:h-3 md:before:top-[50%] md:flex md:items-center md:text-left">
-                <div class="relative p-4 bg-white border__base ">
+            <div class="relative grid gap-12 max-w-7xl my-10 mx-auto px-6 text-center before:left-1/2 before:-translate-x-2/4 before:h-full before:w-3 before:bg-DarkTurquoise before:absolute  md:before:w-full md:before:h-3  md:flex md:items-center md:text-left md:px-0">
+                <div class="relative py-5 px-2 bg-white rounded-lg">
                     <img src="./../img/imgShortly/icon-brand-recognition.svg" alt="" class="absolute top-[-18%] left-[50%] p-4 -translate-x-2/4 bg-black
-                        rounded-full">
+                        rounded-full md:left-[11%]">
                     <p class="pb-5 pt-10 font-bold text-xl ">Brand recognition</p>
-                    <p class="text-gray-300">Boost your branch track how your
-                        links are performing accross the web, links are performing accross the web, links are performing
-                        accross the web.</p>
+                    <p class="text-gray-300 max-w-lg">Boost your branch recognition with each click. Generic links dont mean
+                        a thing. Branded links help instil
+                        confidence in your content.
+                    </p>
                 </div>
 
-                <div class="relative p-4 mt-10 -mb-10 bg-white border__base ">
-                    <img src="./../img/imgShortly/icon-brand-recognition.svg" alt="" class="absolute top-[-18%] left-[50%] -translate-x-2/4 p-4 bg-black
-                        rounded-full">
-                    <p class="pb-5 pt-10 font-bold text-xl">Brand recognition</p>
-                    <p class="text-gray-300">Boost your branch track how your
-                        links are performing accross the web, links are performing accross the web, links are performing
-                        accross the web.</p>
+                <div class="relative py-5 px-2 mt-5 -mb-5 bg-white rounded-lg ">
+                    <img src="./../img/imgShortly/icon-detailed-records.svg" alt="" class="absolute top-[-18%] left-[50%] p-4 -translate-x-2/4 bg-black
+                        rounded-full md:left-[11%]">
+                    <p class="pb-5 pt-10 font-bold text-xl ">Details Records</p>
+                    <p class="text-gray-300 max-w-lg">Boost your branch recognition with each click. Generic links dont mean
+                        a thing. Branded links help instil
+                        confidence in your content.
+                    </p>
                 </div>
-                <div class="relative p-4 mt-20 -mb-20 bg-white border__base">
-                    <img src="./../img/imgShortly/icon-brand-recognition.svg" alt="" class="absolute top-[-18%] left-[50%] -translate-x-2/4 p-4 bg-black
-                        rounded-full">
-                    <div class="border border-20 border-black absolute"></div>
-                    <p class="pb-5 pt-10 font-bold text-xl">Brand recognition</p>
-                    <p class="text-gray-300">Boost your branch track how your
-                        links are performing accross the web, links are performing accross the web, links are performing
-                        accross the web.</p>
+                <div class="relative py-5 px-2 mt-10 -mb-10 bg-white rounded-lg ">
+                    <img src="./../img/imgShortly/icon-fully-customizable.svg" alt="" class="absolute top-[-18%] left-[50%] p-3 -translate-x-2/4 bg-black
+                        rounded-full md:left-[11%]">
+                    <p class="pb-5 pt-10 font-bold text-xl ">Fully Customizable</p>
+                    <p class="text-gray-300 max-w-lg">Boost your branch recognition with each click. Generic links dont mean
+                        a thing. Branded links help instil
+                        confidence in your content.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
     <section>
         <div class="relative">
-            <img src="./../img/imgShortly/bg-boost-desktop.svg" alt="" class="bg-purple-900 h-96">
-            <div class="absolute top-[35%] right-1/2 translate-x-2/4
+            <img src="./../img/imgShortly/bg-boost-desktop.svg" alt="" class="relative h-96 bg-slateBlue2 object-cover ">
+            <div class="absolute top-[50%] right-0 left-0 -translate-y-2/4
                     text-center">
-                <p class="mb-5 text-5xl font-bold text-white">Boost your
-                    link today</p>
-                <button class=" py-2 px-8 border rounded-3xl bg-teal-300
-                        border-teal-300 text-white hover:opacity-75">Get started</button>
+                <p class="mb-5 text-4xl font-bold text-white">Boost your
+                    links today</p>
+                <button class=" py-2 px-8 border rounded-3xl bg-DarkTurquoise
+                        border-DarkTurquoise text-white font-bold hover:opacity-75">Get started</button>
             </div>
         </div>
     </section>
     <footer class="bg-zinc-800 pb-20">
-        <div class="grid m-auto gap-10 justify-center pt-10  md:justify-start md:grid-cols-[15%_60%_20%]">
-            <span class="text-white text-4xl font-bold text-right">Shortly</span>
-            <div class="grid md:grid-cols-3">
-                <ul class="mx-auto">
-                    <li class="pb-4 text-white">Features</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Link</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Shortening</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Analytics</li>
+        <div class="grid justify-center gap-10 pt-10 md:flex md:justify-around ">
+            <span class="text-white text-4xl font-bold text-center">Shortly</span>
+            <div class="grid justify-center gap-10 text-center md:flex md:gap-20 md:text-left">
+                <ul>
+                    <li class="pb-4 text-white hover:text-DarkTurquoise">Features</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Shortening</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Branded</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Analytics</li>
 
                 </ul>
-                <ul class="mx-auto">
-                    <li class="pb-4 text-white">Features</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Link</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Shortening</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Analytics</li>
+                <ul>
+                    <li class="pb-4 text-white hover:text-DarkTurquoise">Features</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Link</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Shortening</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Analytics</li>
 
                 </ul>
-                <ul class="mx-auto">
-                    <li class="pb-4 text-white">Features</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Link</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Shortening</li>
-                    <li class="mb-3 text-gray-500 hover:text-white">Analytics</li>
+                <ul>
+                    <li class="pb-4 text-white hover:text-DarkTurquoise">Company</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">About</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Our Team</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Careers</li>
+                    <li class="mb-3 text-gray-500 hover:text-DarkTurquoise">Contact</li>
 
                 </ul>
             </div>
             <div class="flex gap-5">
-                <div><img src="./../img/imgShortly/icon-facebook.svg" alt=""></div>
-                <div> <img src="./../img/imgShortly/icon-twitter.svg" alt=""></div>
-                <div><img src="./../img/imgShortly/icon-instagram.svg" alt=""></div>
+                <div class="text-white hover:text-DarkTurquoise"><i class="text-2xl fa-brands fa-square-facebook"></i>
+                </div>
+                <div class="text-white hover:text-DarkTurquoise"><i class="text-2xl fa-brands fa-twitter"></i></div>
+                <div class="text-white hover:text-DarkTurquoise"><i class="text-2xl fa-brands fa-youtube"></i></div>
+                <div class="text-white hover:text-DarkTurquoise"><i class="text-2xl fa-brands fa-instagram"></i></div>
             </div>
         </div>
     </footer>
 </body>
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer=""></script>
+
 </html>

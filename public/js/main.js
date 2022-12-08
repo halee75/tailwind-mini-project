@@ -3,7 +3,7 @@ $(document).ready(function () {
   var topMenu = $('.menu-header')
 
   $(toggleTopMenuIcon).click(function () {
-    topMenu.toggleClass('menu-mobile')
+    topMenu.toggleClass('menu-mob')
     $('.icon-clear').addClass('clear')
   })
 

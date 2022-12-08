@@ -17,12 +17,8 @@ $(document).ready(function () {
         $(this).next().slideToggle();
         $('.accordion').animate({ scrollTop: $(this).offset().top }, 400);
         $(this).toggleClass('color-red');
-        $(this).find('i').toggleClass('rotate-180');
+        $(this).find('i').toggleClass('rotate-transition');
     });
-
-    $('.accordion-wrapper').mouseover(function () {
-        $('.accordion-wrapper').children('.accordion-item').toggleClass('hover-gray');
-    })
 
     $('.title-1').on('click', function (event) {
         $('.title-1').addClass('border-orange');
